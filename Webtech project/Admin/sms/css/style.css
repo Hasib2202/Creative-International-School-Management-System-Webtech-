@@ -1,0 +1,180 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+.nav {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  padding: 20px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 20px);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+  transition: transform 0.3s; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* !new animation */
+
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  transform: scale(1.1); 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+  transform: scale(1.05); 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.card {
+  animation: fadeInUp 0.5s ease-out forwards;
+  transition: transform 0.3s; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../images/loginBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+    height: 100vh; /* Set the height of the body to 100% of the viewport height */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    text-align: center;
+    color: #007bff;
+    margin-top: 50px;
+    animation: slideInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes slideInAnimation {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideInAnimation 1s ease-in-out forwards;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+.login-container button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.register {
+    text-align: center;
+    font-size: 16px;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
