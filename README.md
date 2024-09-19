@@ -1,84 +1,125 @@
-# School Management System
 
 
+# Creative International School Management System
 
-### There are Four types of users: 
+## Project Overview
+The Creative International School Management System is a comprehensive web-based application built using HTML, CSS, JavaScript, PHP, and MySQL (with XAMPP) to manage day-to-day activities within a school. The system is designed to streamline administrative, teaching, and library processes, while offering role-specific features for Admins, Teachers, Students, and Librarians.
 
- 1. Admin 
- 2. Teacher 
- 3. Student 
- 4. Librarian
+## Features Overview
 
-### Common Features for all user:
- - All users can Login to the system   
- - Can manipulate their profile information (edit-view etc.)    
- - Can Reset Password.
+### 1. Admin
+The Admin is responsible for managing users (teachers, students, librarians), creating courses, publishing notices, and overseeing overall system functionality. Admins have full access to all modules within the system.
 
-### Admin Functionalities:
+### 2. Teacher
+Teachers have functionalities such as managing student attendance, uploading class materials, publishing and managing notices, and reviewing student performance and requests.
 
- - Can add users (student, teacher and librarian).
- - Can edit other users (student, teacher and librarian) profiles.
- - Can View other users (student, teacher and librarian) profiles.
- - Can delete other users (student, teacher and librarian) profiles.
- - Can Block other users (student, teacher and librarian) profiles.
- - Can give notice to every user.
- - Can view login history.
- - Can View the attendance list of other users.
- - Can see book details of the library.
- - Can create a teacher's class routine.
- - Can view student's leave request.
- - Can create courses.
- - Can update courses.
- - Can delete courses.
- - Can approve students' edit requests.
+### 3. Student
+Students can view class schedules, notices, and results, submit assignments, request leave, and manage their library accounts.
 
-### Teacher Functionalities:
+### 4. Librarian
+Librarians manage the library system by overseeing books, issuing, and returning books, managing accounts, and processing fine payments.
 
- - Can View Student profiles. 
- - Can take Students attendance. 
- - Can see own class schedule. 
- - Can see the notice board. 
- - Can give notice to students
- - Can update notice. 
- - Can delete notice. 
- - Can Upload Class notes. 
- - Can Delete Class notes. 
- - Can Update Class notes. 
- - Can add Student Marks.
- - Can update student marks. 
- - Can Delete Student Marks. 
- - Can view issue book history. 
- - Can approve students' leave requests.
+---
 
-### Student Functionalities:
+## Common Features (Available to All Users)
+- **Login**: Every user can log in to the system.
+- **Profile Management**: Users can edit and view their profile information.
+- **Password Management**: Users can reset their password.
 
- - Can view Daily Class Routine. 
- - Can View Teachers Notice. 
- - Can view Teachers contact details. 
- - Can Upload Document (Assignment, Home Work etc.) 
- - Can Delete Document (Assignment, Home Work etc.). 
- - Can View School notices. Can view Own Result. 
- - Can download their report card. 
- - Can View Attendance List. 
- - Can Request for leave. Can view course details. 
- - Can request Admin for edit information with documentation.
- - Can send order request of books to librarian. 
- - Can View issue book history. 
- - Can view detailed information of books in library.
+---
 
-### Librarian Functionalities:
+## Admin Functionalities
 
- - Can Add New Book. 
- - Can Delete Book. 
- - Can Update Book Information.
- - Can view Student list. 
- - Can View Teacher list. 
- - Can create library accounts for students and teachers. 
- - Can update library accounts for students and teachers. 
- - Can block library accounts for students and teachers. 
- - Can Delete library accounts for students and teachers. 
- - Can check who took the book and didn’t return. 
- - Can earch book information and View details (available books, shelf no etc.) 
- - Can add fine. Can give new book arrival notice. 
- - Can pprove order request of books. 
- - Can add information of issued and returned books to database.
+- **User Management**:
+  - Add, edit, view, delete, and block Student, Teacher, and Librarian profiles.
+- **Notice Management**:
+  - Publish, edit, delete, and view notices for all users.
+- **Course Management**:
+  - Create, update, and delete courses.
+- **View Logs**:
+  - View login history of all users.
+- **Attendance Management**:
+  - View the attendance list of all users.
+- **Routine Management**:
+  - Create teacher class schedules.
+- **Requests Management**:
+  - Approve students' edit requests and leave requests.
+- **Library Management**:
+  - View library details including book lists.
+
+---
+
+## Teacher Functionalities
+
+- **Student Management**:
+  - View student profiles and approve leave requests.
+- **Attendance**:
+  - Take and view student attendance.
+- **Class Schedule**:
+  - View personal class schedules.
+- **Notice Management**:
+  - Publish, edit, delete, and view notices for students.
+- **Class Materials**:
+  - Upload, update, and delete class notes.
+- **Marks Management**:
+  - Add, update, and delete student marks.
+- **Library Management**:
+  - View book history.
+
+---
+
+## Student Functionalities
+
+- **Class Routine**:
+  - View daily class routines.
+- **Notice Board**:
+  - View notices published by teachers and school administrators.
+- **Teacher Information**:
+  - View contact details of teachers.
+- **Document Management**:
+  - Upload, update, and delete assignments and homework.
+- **Results**:
+  - View exam results and download report cards.
+- **Attendance**:
+  - View personal attendance records.
+- **Leave Requests**:
+  - Request leave from teachers.
+- **Course Details**:
+  - View course information.
+- **Library**:
+  - Request books from the library and view book issue history.
+
+---
+
+## Librarian Functionalities
+
+- **Book Management**:
+  - Add, edit, and delete books from the library.
+- **User Management**:
+  - View and manage student and teacher library accounts.
+  - Create, update, and delete library accounts for users.
+  - Block user accounts if needed.
+- **Book Records**:
+  - Track book issues, returns, and overdue books.
+- **Library Notices**:
+  - Publish new book arrival notices.
+- **Fines**:
+  - Add fines for overdue books.
+- **Order Requests**:
+  - Approve book order requests from students.
+  
+---
+
+## Technologies Used:
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP
+- **Database**: MySQL (via XAMPP)
+
+## How to Run the Project:
+
+1. Install XAMPP and start Apache & MySQL.
+2. Place the project folder in the `htdocs` directory.
+3. Import the database through PHPMyAdmin.
+4. Run the application on `localhost` through the browser.
+
+
