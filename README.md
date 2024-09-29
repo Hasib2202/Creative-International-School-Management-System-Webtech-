@@ -38,8 +38,8 @@ Librarians manage the library system by overseeing books, issuing, and returning
   - Create, update, and delete courses.
 - **View Logs**:
   - View login history of all users.
-- **Attendance Management**:
-  - View the attendance list of all users.
+- **Payment Management**:
+  - View the payments list of all students and access of payment.
 - **Routine Management**:
   - Create teacher class schedules.
 - **Requests Management**:
